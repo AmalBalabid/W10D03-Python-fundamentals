@@ -19,8 +19,32 @@
 
 # Task 2 :
 
-def show_student(name, gpa=0):
+# def show_student(name, gpa=0):
     
-    print (name ," Has " ,gpa  )
+#     print (name ," Has " ,gpa  )
 
-show_student("saad",3.25)
+# show_student("saad",3.25)
+
+
+# Task 3 :
+
+
+subjects_grades = { 'Physics': 90, 'Math': 100, 'history': 70 }
+
+
+
+
+def find_max_and_min(s_g):
+    max_number = max(s_g.values())
+    min_number = min(s_g.values())
+    for name, grade in s_g.items():
+        if grade == max_number:
+            print("Max is " , name)
+        if  grade == min_number:
+            print("Min is " , name)
+
+
+
+
+
+find_max_and_min(subjects_grades)
